@@ -1,5 +1,5 @@
 import axios from 'axios';
- const apiUrl = "http://localhost:5216";
+ const apiUrl = process.env.REACT_APP_API_KEY;
  axios.defaults.baseURL = apiUrl;
 // הוספת interceptor לתפיסת שגיאות
 axios.interceptors.response.use(
